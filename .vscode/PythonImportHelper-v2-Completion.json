@@ -1,0 +1,112 @@
+[
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "CommandStart",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "TOKEN = \"7512686350:AAGM5NrtPQXkr_Fqh890o5um32wRWsDSQ18\"\nbot = Bot(token=TOKEN)\ndp = Dispatcher()\n# 🔘 Asosiy menyu\nmain_menu = ReplyKeyboardMarkup(\n    keyboard=[\n        [KeyboardButton(text=\"📏 Pips hisoblash\")],\n        [KeyboardButton(text=\"💰 Profit hisoblash\")],\n        [KeyboardButton(text=\"ℹ️ Bot haqida\")]\n    ],",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "bot = Bot(token=TOKEN)\ndp = Dispatcher()\n# 🔘 Asosiy menyu\nmain_menu = ReplyKeyboardMarkup(\n    keyboard=[\n        [KeyboardButton(text=\"📏 Pips hisoblash\")],\n        [KeyboardButton(text=\"💰 Profit hisoblash\")],\n        [KeyboardButton(text=\"ℹ️ Bot haqida\")]\n    ],\n    resize_keyboard=True",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "dp = Dispatcher()\n# 🔘 Asosiy menyu\nmain_menu = ReplyKeyboardMarkup(\n    keyboard=[\n        [KeyboardButton(text=\"📏 Pips hisoblash\")],\n        [KeyboardButton(text=\"💰 Profit hisoblash\")],\n        [KeyboardButton(text=\"ℹ️ Bot haqida\")]\n    ],\n    resize_keyboard=True\n)",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "main_menu",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "main_menu = ReplyKeyboardMarkup(\n    keyboard=[\n        [KeyboardButton(text=\"📏 Pips hisoblash\")],\n        [KeyboardButton(text=\"💰 Profit hisoblash\")],\n        [KeyboardButton(text=\"ℹ️ Bot haqida\")]\n    ],\n    resize_keyboard=True\n)\n# ⌨️ Foydalanuvchi rejimini saqlovchi\nuser_mode = {}",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "user_mode",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "user_mode = {}\n@dp.message(CommandStart())\nasync def start_handler(message: Message):\n    await message.answer(\n        \"Assalomu alaykum, Trader! 👋\\n\\n\"\n        \"Quyidagi funksiyalardan birini tanlang:\",\n        reply_markup=main_menu\n    )\n@dp.message(F.text == \"📏 Pips hisoblash\")\nasync def set_pips_mode(message: Message):",
+        "detail": "bot",
+        "documentation": {}
+    }
+]
